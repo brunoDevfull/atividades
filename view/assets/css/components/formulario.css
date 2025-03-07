@@ -1,0 +1,106 @@
+/* Estilo para o título */
+.content-grid h1 {
+    font-family: "Poppins";
+    font-size: 36px;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para o formulário */
+.content-grid form {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20vw;
+}
+
+/* Estilo para os labels */
+.content-grid form label {
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    
+}
+
+/* Estilo para os inputs e textarea */
+.content-grid form input[type="text"],
+.content-grid form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 45vw;
+    margin-left: 1vw;
+}
+
+.content-grid form input[type="text"]:focus,
+.content-grid form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo específico para o textarea */
+.content-grid form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 150px;
+}
+
+#quantidade_cursos {
+    font-family: "Poppins";
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 45vw;
+    margin-left: 1vw;
+}
+
+#email {
+    font-family: "Poppins";
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 45vw;
+    margin-left: 1vw;
+}
+
+#data_nascimento {
+    font-family: "Poppins";
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 45vw;
+    margin-left: 1vw;
+}
+
+/* Estilo para o botão de salvar */
+.content-grid form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 40vw;
+    margin-left: 4.5vw;
+}
+
+.content-grid form button[type="submit"]:hover {
+    background-color: #0b4077;
+}

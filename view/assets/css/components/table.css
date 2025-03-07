@@ -1,0 +1,48 @@
+table {
+    font-family: "Poppins";
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 20px 0; */
+}
+
+table, th, td {
+    font-family: "Poppins";
+    /* border: 1px solid #ddd; */
+    
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+ 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    vertical-align: middle;
+}
+

@@ -1,0 +1,17 @@
+.body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 68px 1fr 22px;
+}
+
+@media (max-width: 600px) {
+    .body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 48px 1fr 16px;
+    }
+
+    .footer-grid {
+        height: 16px;
+        grid-column: 1;
+    }
+}
