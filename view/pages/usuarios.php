@@ -40,51 +40,53 @@ if (!isset($_SESSION['usuarios'])) {
             </button>
         </a>
         <!-- Tabela de Usuários -->
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Data de Nascimento</th>
-                    <th>CPF</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                // Acessa o array de usuários da sessão
-                $usuarios = $_SESSION['usuarios'];
-
-                // Exibe os usuários na tabela
-                foreach ($usuarios as $usuario) {
-                    echo "
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{$usuario['id']}</td>
-                        <td>{$usuario['nome']}</td>
-                        <td>{$usuario['email']}</td>
-                        <td>{$usuario['telefone']}</td>
-                        <td>{$usuario['data_nascimento']}</td>
-                        <td>{$usuario['cpf']}</td>
-                        <td>
-                            <a href='edicao_usuario.php?id={$usuario['id']}'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>edit</span>
-                                </button>
-                            </a>
-                            <a href='excluir_usuario.php?id={$usuario['id']}' class='btn-excluir'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>delete</span>
-                                </button>
-                            </a>
-                        </td>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Data de Nascimento</th>
+                        <th>CPF</th>
+                        <th>Ações</th>
                     </tr>
-                    ";
-                }
-                ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php
+                    // Acessa o array de usuários da sessão
+                    $usuarios = $_SESSION['usuarios'];
+
+                    // Exibe os usuários na tabela
+                    foreach ($usuarios as $usuario) {
+                        echo "
+                        <tr>
+                            <td>{$usuario['id']}</td>
+                            <td>{$usuario['nome']}</td>
+                            <td>{$usuario['email']}</td>
+                            <td>{$usuario['telefone']}</td>
+                            <td>{$usuario['data_nascimento']}</td>
+                            <td>{$usuario['cpf']}</td>
+                            <td>
+                                <a href='edicao_usuario.php?id={$usuario['id']}'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>edit</span>
+                                    </button>
+                                </a>
+                                <a href='excluir_usuario.php?id={$usuario['id']}' class='btn-excluir'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>delete</span>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                        ";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <?php

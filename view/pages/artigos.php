@@ -41,45 +41,48 @@ if (!isset($_SESSION['artigo'])) {
         </a>
 
         <!-- Tabela de Artigos -->
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Conteúdo</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                // Acessa o array de artigos da sessão
-                $artigos = $_SESSION['artigo'];
-
-                // Exibe os artigos na tabela
-                foreach ($artigos as $artigo) {
-                    echo "
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{$artigo['id']}</td>
-                        <td>{$artigo['titulo']}</td>
-                        <td>{$artigo['conteudo']}</td>
-                        <td>
-                            <a href='edicao_artigos.php?id={$artigo['id']}'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>edit</span>
-                                </button>
-                            </a>
-                            <a href='excluir_artigos.php?id={$artigo['id']}' class='btn-excluir'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>delete</span>
-                                </button>
-                            </a>
-                        </td>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Conteúdo</th>
+                        <th>Ações</th>
                     </tr>
-                    ";
-                }
-                ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php
+                    // Acessa o array de artigos da sessão
+                    $artigos = $_SESSION['artigo'];
+
+                    // Exibe os artigos na tabela
+                    foreach ($artigos as $artigo) {
+                        echo "
+                        <tr>
+                            <td>{$artigo['id']}</td>
+                            <td>{$artigo['titulo']}</td>
+                            <td>{$artigo['conteudo']}</td>
+                            <td>
+                                <a href='edicao_artigos.php?id={$artigo['id']}'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>edit</span>
+                                    </button>
+                                </a>
+                                <a href='excluir_artigos.php?id={$artigo['id']}' class='btn-excluir'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>delete</span>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                        ";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+        
     </main>
 
     <?php

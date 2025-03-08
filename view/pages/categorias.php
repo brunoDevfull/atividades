@@ -42,47 +42,49 @@ if (!isset($_SESSION['categorias'])) {
         </a>
 
         <!-- Tabela de Categorias -->
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                    <th>Quantidade de Cursos</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                // Acessa o array de categorias da sessão
-                $categorias = $_SESSION['categorias'];
-
-                // Exibe as categorias na tabela
-                foreach ($categorias as $categoria) {
-                    echo "
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{$categoria['id']}</td>
-                        <td>{$categoria['nome']}</td>
-                        <td>{$categoria['descricao']}</td>
-                        <td>{$categoria['quantidade_cursos']}</td>
-                        <td>
-                            <a href='edicao_categorias.php?id={$categoria['id']}'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>edit</span>
-                                </button>
-                            </a>
-                            <a href='excluir_categorias.php?id={$categoria['id']}' class='btn-excluir'>
-                                <button type='button'>
-                                    <span class='material-symbols-outlined'>delete</span>
-                                </button>
-                            </a>
-                        </td>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Quantidade de Cursos</th>
+                        <th>Ações</th>
                     </tr>
-                    ";
-                }
-                ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php
+                    // Acessa o array de categorias da sessão
+                    $categorias = $_SESSION['categorias'];
+
+                    // Exibe as categorias na tabela
+                    foreach ($categorias as $categoria) {
+                        echo "
+                        <tr>
+                            <td>{$categoria['id']}</td>
+                            <td>{$categoria['nome']}</td>
+                            <td>{$categoria['descricao']}</td>
+                            <td>{$categoria['quantidade_cursos']}</td>
+                            <td>
+                                <a href='edicao_categorias.php?id={$categoria['id']}'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>edit</span>
+                                    </button>
+                                </a>
+                                <a href='excluir_categorias.php?id={$categoria['id']}' class='btn-excluir'>
+                                    <button type='button'>
+                                        <span class='material-symbols-outlined'>delete</span>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                        ";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <?php
