@@ -27,8 +27,12 @@ if (!isset($_SESSION['usuarios'])) {
     ?>
 
     <main class="content-grid">
-        <h1>Usuários</h1>
-        <!-- Link para cadastrar nova categoria -->
+        <h1>Lista de Usuários</h1>
+
+        <!-- Tabela de Usuários -->
+        <div class="table-container">
+
+            <!-- Link para cadastrar nova categoria -->
         <a href="cadastro_usuario.php" class="btn">
             <button type="button">
                 <span>
@@ -40,23 +44,22 @@ if (!isset($_SESSION['usuarios'])) {
             </button>
         </a>
         <!-- Tabela de Usuários -->
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Telefone</th>
-                        <th>Data de Nascimento</th>
-                        <th>CPF</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // Acessa o array de usuários da sessão
-                    $usuarios = $_SESSION['usuarios'];
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Data de Nascimento</th>
+                    <th>CPF</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Acessa o array de usuários da sessão
+                $usuarios = $_SESSION['usuarios'];
 
                     // Exibe os usuários na tabela
                     foreach ($usuarios as $usuario) {

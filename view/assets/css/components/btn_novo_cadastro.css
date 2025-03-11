@@ -1,7 +1,10 @@
 .btn {
     text-decoration: none; /* Remove o sublinhado do link */
-    display: inline-block; /* Faz o link se comportar como um bloco inline */
+    display: flex;
     margin: 10px 0; /* Adiciona uma margem ao redor do botão */
+    justify-content: flex-start;
+    margin-top: 0.5px;
+    
 }
 
 .btn button {
@@ -13,7 +16,6 @@
     cursor: pointer; /* Muda o cursor para um ponteiro */
     font-size: 16px; /* Tamanho da fonte */
     transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
-    margin-left: 75vw;
 }
 
 .btn button:hover {

@@ -27,8 +27,11 @@ if (!isset($_SESSION['artigo'])) {
     ?>
 
     <main class="content-grid">
-        <h1>Artigos</h1>
-        <!-- Link para cadastrar nova categoria -->
+        <h1>Lista de Artigos</h1>
+        
+        <!-- Tabela de Artigos -->
+        <div class="table-container">
+            <!-- Link para cadastrar nova categoria -->
         <a href="cadastro_artigos.php" class="btn">
             <button type="button">
                 <span>
@@ -40,15 +43,22 @@ if (!isset($_SESSION['artigo'])) {
             </button>
         </a>
 
+<<<<<<< HEAD
+=======
         <!-- Tabela de Artigos -->
         <div class="table-container">
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Título</th>
                         <th>Conteúdo</th>
+<<<<<<< HEAD
+                        <th></th>
+=======
                         <th>Ações</th>
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
                     </tr>
                 </thead>
                 <tbody>

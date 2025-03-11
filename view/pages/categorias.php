@@ -27,9 +27,11 @@ if (!isset($_SESSION['categorias'])) {
     ?>
 
     <main class="content-grid">
-        <h1>Categoria de Cursos</h1>
+        <h1>Lista de Cursos</h1>
 
-        <!-- Link para cadastrar nova categoria -->
+        <!-- Tabela de Categorias -->
+        <div class="table-container">
+            <!-- Link para cadastrar nova categoria -->
         <a href="cadastro_categoria.php" class="btn">
             <button type="button">
                 <span>
@@ -41,8 +43,11 @@ if (!isset($_SESSION['categorias'])) {
             </button>
         </a>
 
+<<<<<<< HEAD
+=======
         <!-- Tabela de Categorias -->
         <div class="table-container">
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
             <table>
                 <thead>
                     <tr>
@@ -50,7 +55,11 @@ if (!isset($_SESSION['categorias'])) {
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Quantidade de Cursos</th>
+<<<<<<< HEAD
+                        <th></th>
+=======
                         <th>Ações</th>
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
                     </tr>
                 </thead>
                 <tbody>

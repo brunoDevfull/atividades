@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+/* 
+table {
+=======
 
 /* table {
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
     font-family: "Poppins";
     width: 100%;
     border-collapse: collapse;
@@ -45,9 +50,22 @@ button:hover {
 .material-symbols-outlined {
     font-size: 25px;
     vertical-align: middle;
+} */
+ 
+ /* Estilo para a tabela */
+ .table-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #ffffff;
 }
  */
 
+<<<<<<< HEAD
+
+=======
  .table-container {
     width: 80%;
     margin: 50px auto;
@@ -58,6 +76,7 @@ button:hover {
 }
 
 /* Estilo para a tabela */
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
 table {
     font-family: "Poppins";
     width: 100%;
@@ -75,6 +94,11 @@ th, td {
 th {
     background-color: #f2f2f2;
     color: #333;
+<<<<<<< HEAD
+    font-style: oblique;
+    font-weight: bold;
+=======
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
 }
 
 /* Estilo para as linhas da tabela */
@@ -90,4 +114,24 @@ td:first-child, th:first-child {
 /* Estilo para a última célula da linha */
 td:last-child, th:last-child {
     border-radius: 0 10px 10px 0;
+<<<<<<< HEAD
+}
+/* Estilo para os botoes de editar e excluir */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #caf0f8;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    vertical-align: middle;
+=======
+>>>>>>> c83057e74f2e57085bc0bd45601de0ca6c510f4b
 }
